@@ -1,4 +1,4 @@
-# apollo-server-example
+# apollo-express-server
 A very simple Apollo GraphQL server
 
 ```
