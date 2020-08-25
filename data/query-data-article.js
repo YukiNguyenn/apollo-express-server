@@ -1,5 +1,5 @@
-import _ from 'lodash';
-import articlesData from './articles.js';
+import _ from 'lodash'
+import articlesData from './articles'
 
 function fakeDelay (cb) {
   return new Promise(resolve => {
@@ -12,8 +12,8 @@ function fakeDelay (cb) {
 export default {
   getArticles(page, limit) {
     return fakeDelay(() => {
-      const start = page * limit;
-      const end = start + limit;
+      const start = page * limit
+      const end = start + limit
       return {
         articles: articlesData.slice(start, end)
       }
@@ -28,4 +28,4 @@ export default {
       return article
     })
   }
-};
+}
